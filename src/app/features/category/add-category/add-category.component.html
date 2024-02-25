@@ -1,0 +1,24 @@
+<div class="container">
+    <h1 class="mt-3">Add Category</h1>
+<!--after adding the FormsModule to the app.module.ts file I give it a #Form='ngForm' to denote it as an angular form then and add the (ngSubmit)='the submit method written in the add-category.component.ts file'-->
+<!--bind the model.name and model.urlHandler from the model/constructor in add-category.components.ts using [(ngModel)] = "model.name" and [(ngModel)] = "model.urlHandler"-->
+    <form #form="ngForm" (ngSubmit)="onFormSubmit()">
+        <div class="mt-2">
+            <div class="mt-3">
+                <label class="form-label">Category Name</label>
+                <input type="text" id="categoryName" class="form-control" name="categoryName" 
+                [(ngModel)]="model.name">
+            </div>
+
+            <div class="mt-3">
+                <label class="form-label">Category Url Handle</label>
+                <input type="text" id="categoryUrlHandle" class="form-control" name="categoryUrlHandle" [(ngModel)]="model.urlHandle">
+            </div>
+
+            <div class="mt-3">
+                <button type="submit" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </form>
+</div>
+
