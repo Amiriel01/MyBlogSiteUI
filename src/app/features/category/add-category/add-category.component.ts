@@ -2,6 +2,7 @@ import { Component, OnDestroy } from '@angular/core';
 import { AddCategoryRequest } from '../models/add-category-request.model';
 import { CategoryService } from '../services/category.service';
 import { Subscription } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-category',
@@ -22,7 +23,8 @@ export class AddCategoryComponent implements OnDestroy {
 
   //create a constructor for the model: AddCategoryRequest
   //add the injectable categoryService from the category.service.ts
-  constructor(private categoryService: CategoryService) {
+  //inject the router into the component to route the user from the create category page back to the category list page
+  constructor(private categoryService: CategoryService, private router: Router) {
     this.model = {
       name: '',
       urlHandle: '',
@@ -41,7 +43,9 @@ export class AddCategoryComponent implements OnDestroy {
     //must use the subscribe method for the Observable to be used
     .subscribe({
       next: (response) => {
-        console.log('This was successful.');
+        // console.log('This was successful.');
+        //use the router from above here to route the user on a successful category create back to the category list
+        this.router.navigateByUrl('/admin/categories');
       },
       error: (error) => {
         console.log('There is an error');
