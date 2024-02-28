@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Category } from '../models/category.model';
 import { environment } from 'src/environments/environment';
+import { UpdateCategoryRequest } from '../models/update-category-request.model';
 
 //create services file by using the command prompt ng g s and the name of the file
 //service files are automatically injected in the root file and also the app.module.ts file under declarations
@@ -32,5 +33,11 @@ export class CategoryService {
   //create a service method to get a category by its id and use it inside the edit-category.component.ts file
   getCategoryById(id: string) : Observable<Category> {
     return this.http.get<Category>(`${environment.apiBaseUrl}/api/Catagories/${id}`);
+  }
+
+  //update category
+  updateCategory(id: string, updateCategoryRequest: UpdateCategoryRequest) : Observable<Category> {
+    //talk to the api, give it the id it needs and the object it needs to update the entry
+    return this.http.put<Category>(`${environment.apiBaseUrl}/api/Catagories/${id}`, updateCategoryRequest);
   }
 }
