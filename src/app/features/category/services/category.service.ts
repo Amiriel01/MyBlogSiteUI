@@ -28,4 +28,9 @@ export class CategoryService {
     //returns an array of category
     return this.http.get<Category[]>(`${environment.apiBaseUrl}/api/Catagories`);
   }
+
+  //create a service method to get a category by its id and use it inside the edit-category.component.ts file
+  getCategoryById(id: string) : Observable<Category> {
+    return this.http.get<Category>(`${environment.apiBaseUrl}/api/Catagories/${id}`);
+  }
 }
