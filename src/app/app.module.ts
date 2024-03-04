@@ -11,6 +11,8 @@ import {HttpClientModule} from '@angular/common/http';
 import { EditCategoryComponent } from './features/category/edit-category/edit-category.component';
 import { BlogpostListComponent } from './features/blog-post/blogpost-list/blogpost-list.component';
 import { AddBlogpostComponent } from './features/blog-post/add-blogpost/add-blogpost.component';
+import { EditBlogpostComponent } from './features/blog-post/edit-blogpost/edit-blogpost.component';
+import { MarkdownModule } from 'ngx-markdown';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { AddBlogpostComponent } from './features/blog-post/add-blogpost/add-blog
     AddCategoryComponent,
     EditCategoryComponent,
     BlogpostListComponent,
-    AddBlogpostComponent
+    AddBlogpostComponent,
+    EditBlogpostComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +32,7 @@ import { AddBlogpostComponent } from './features/blog-post/add-blogpost/add-blog
     FormsModule,
     //import HttpClientModule and import to use http in the project
     HttpClientModule,
+    MarkdownModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
