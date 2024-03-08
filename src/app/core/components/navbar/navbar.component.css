@@ -19,14 +19,14 @@
     font-size: 1.25rem;
 }
 
-#nav-bar-button {
+.nav-bar-button {
     background-color: #ebe9df;
     color: #3f5a68;
     font-size: 1.rem;
     font-weight: 600;
 }
 
-#nav-bar-button:hover {
+.nav-bar-button:hover {
     color: #ebe9df;
     background-color: #3f5a68;
     border: 1px solid #ebe9df;
