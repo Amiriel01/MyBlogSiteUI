@@ -1,8 +1,8 @@
-<div class="contianer">
+<div class="contianer" id="category-list-page-container">
     <h1 class="mt-3">Category List</h1>
 
     <div class="d-flex justified-content-end mt-3">
-        <a [routerLink]="['/admin/categories/add']" class="btn btn-primary">Add Category</a>
+        <a [routerLink]="['/admin/categories/add']" class="btn" id="add-category-button">Add Category</a>
     </div>
     <!--create an ng container, if the categories are defined loop through the categories and create a table for them, use *ngIf-->
     <!--use async pipe here, store it as the variable categories-->
