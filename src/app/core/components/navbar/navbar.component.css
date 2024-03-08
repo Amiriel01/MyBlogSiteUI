@@ -1,0 +1,33 @@
+#nav-bar-container {
+    background-color: #3f5a68;
+    padding: 1rem;
+    color: #ebe9df;
+    font-size: 1.25rem;
+}
+
+#nav-bar-title {
+    font-size: 1.75rem;
+    color: #ebe9df;
+}
+
+#admin-toggle {
+    color: #ebe9df;
+    font-size: 1.75rem;
+}
+
+#nav-bar-email {
+    font-size: 1.25rem;
+}
+
+#nav-bar-button {
+    background-color: #ebe9df;
+    color: #3f5a68;
+    font-size: 1.rem;
+    font-weight: 600;
+}
+
+#nav-bar-button:hover {
+    color: #ebe9df;
+    background-color: #3f5a68;
+    border: 1px solid #ebe9df;
+}
