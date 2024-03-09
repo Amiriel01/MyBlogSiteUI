@@ -31,3 +31,15 @@
     background-color: #3f5a68;
     border: 1px solid #ebe9df;
 }
+
+.dropdown-item:active {
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+}
+
+.dropdown-item:hover {
+    background-color: white;
+    color: black;
+    text-decoration: underline;
+}
