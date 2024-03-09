@@ -7,26 +7,28 @@
     <!--create an ng container, if the categories are defined loop through the categories and create a table for them, use *ngIf-->
     <!--use async pipe here, store it as the variable categories-->
     <ng-container *ngIf="categories$ | async as categories">
-        <table class="table table-bordered mt-3">
-            <thead>
-                <tr>
-                    <th>Id</th>
-                    <th>Name</th>
-                    <th>Url Handle</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <!--use ng for loop to loop through the categories-->
-                <tr *ngFor="let category of categories">
-                    <td>{{category.id}}</td>
-                    <td>{{category.name}}</td>
-                    <td>{{category.urlHandle}}</td>
-                    <td>
-                        <a class="btn btn-light" [routerLink]="['/admin/categories', category.id]">Edit</a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="table-responsive mt-3">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <!-- <th style="width: 10%;">Id</th> -->
+                        <th>Name</th>
+                        <th>Url Handle</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--use ng for loop to loop through the categories-->
+                    <tr *ngFor="let category of categories">
+                        <!-- <td>{{category.id}}</td> -->
+                        <td>{{category.name}}</td>
+                        <td>{{category.urlHandle}}</td>
+                        <td>
+                            <a class="btn btn-light" [routerLink]="['/admin/categories', category.id]">Edit</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </ng-container>
 </div>

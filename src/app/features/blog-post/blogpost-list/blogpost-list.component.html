@@ -8,6 +8,7 @@
         </a>
     </div>
     <ng-container *ngIf="blogPosts$ | async as blogPosts">
+        <div class="table-responsive mt-3">
         <table class="table table-bordered mt-3">
             <thead>
                 <tr>
@@ -18,10 +19,10 @@
                         Short Description
                     </th>
                     <th>
-                        Is Visible?
+                        Visible
                     </th>
                     <th>
-                        Categories
+                        Category
                     </th>
                     <th>
                         
@@ -44,5 +45,6 @@
                 </tr>
             </tbody>
         </table>
+    </div>
     </ng-container>
 </div>

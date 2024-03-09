@@ -1,0 +1,28 @@
+#markdown-container {
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-top: .5rem;
+    word-wrap: break-word;
+}
+
+.add-blog-post-button,
+#select-image-button {
+    background-color: #3f5a68;
+    color: white;
+    font-size: 1.rem;
+    font-weight: 600;
+}
+
+#select-image-button {
+   margin-left: 1rem;
+   margin-bottom: .5rem;
+}
+
+input[type=checkbox]:checked {
+    background-color: #3f5a68 !important;
+    color: #ffffff !important;
+  }
+
+input[type='checkbox']:after {
+      box-shadow: none !important;
+  }
