@@ -19,6 +19,7 @@ import { BlogDetailsComponent } from './features/public/blog-details/blog-detail
 import { LoginComponent } from './features/auth/login/login.component';
 import { AuthInterceptor } from './core/interceptors/auth.interceptor';
 import { FooterComponent } from './core/components/footer/footer/footer.component';
+import { BlogPostService } from './features/blog-post/Services/blog-post.service';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,7 @@ import { FooterComponent } from './core/components/footer/footer/footer.componen
       provide: HTTP_INTERCEPTORS,
       useClass: AuthInterceptor,
       multi: true,
-    }
+    },
   ],
   bootstrap: [AppComponent]
 })

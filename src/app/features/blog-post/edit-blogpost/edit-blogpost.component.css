@@ -1,12 +1,19 @@
-.edit-blog-post-button {
+.edit-blog-post-button,
+#select-image-button {
     background-color: #3f5a68;
     color: white;
     font-size: 1.rem;
     font-weight: 600;
 }
 
-.edit-blog-post-button:hover {
+#select-image-button {
+   margin-left: 2rem;
+}
+
+.edit-blog-post-button:hover,
+#select-image-button:hover {
     color: #3f5a68;
     background-color: #ebe9df;
     border: 1px solid #3f5a68;
 }
+

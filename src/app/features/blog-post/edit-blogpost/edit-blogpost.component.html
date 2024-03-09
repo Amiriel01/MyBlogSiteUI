@@ -33,7 +33,7 @@
                 </div>
                 <div class="mt-3">
                     <label for="blogImageUrl" class="form-label">Blog Image Url</label>
-                    <button type="button" class="btn btn-light" (click)="openImageSelector()">
+                    <button type="button" class="btn" id="select-image-button" (click)="openImageSelector()">
                         Select Image
                     </button>
                     <ng-container *ngIf="model.blogImageUrl != ''">

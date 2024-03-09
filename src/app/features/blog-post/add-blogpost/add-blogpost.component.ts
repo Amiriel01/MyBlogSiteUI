@@ -50,7 +50,7 @@ export class AddBlogpostComponent implements OnInit, OnDestroy {
       .subscribe({
         next: (response) => {
           this.router.navigateByUrl('/admin/blogposts');
-        }
+        },
       });
   }
 
