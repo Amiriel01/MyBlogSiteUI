@@ -15,6 +15,9 @@
                     <button type="submit" class="btn" id="login-page-button">Login</button>
                 </div>
             </form>
+            <div *ngIf="errorMessage" class="alert alert-danger" role="alert" id="login-error-message">
+                Incorrect email or password. Please try again.
+            </div>
         </div>
     </div>
 </div>

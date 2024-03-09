@@ -12,12 +12,14 @@ import { Router } from '@angular/router';
 export class LoginComponent {
 
   model: LoginRequest;
+  errorMessage: string;
 
   constructor(private authService: AuthService, private cookieService: CookieService, private router: Router) {
     this.model = {
       email: '',
       password: '',
     };
+    this.errorMessage = '';
   }
 
   onFormSubmit(): void {
@@ -35,6 +37,9 @@ export class LoginComponent {
         
         //redirect to homepage
         this.router.navigateByUrl('/');
+      },
+      error: (error) => {
+        this.errorMessage = 'Incorrect email or password. Please try again.';
       }
     });
   }
