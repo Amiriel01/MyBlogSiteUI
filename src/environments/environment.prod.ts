@@ -1,7 +1,7 @@
 //stores variables to use within components and services
 
 export const environment = {
-    production: false,
+    production: true,
     //local version of api
-    apiBaseUrl: 'https://localhost:7013'
+    apiBaseUrl: 'https://blogsiteapi2024.azurewebsites.net'
 };
