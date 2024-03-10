@@ -33,3 +33,18 @@ input[type=checkbox]:checked {
 input[type='checkbox']:after {
       box-shadow: none !important;
   }
+
+  select option:checked,
+  select option:active,
+  select option:focus,
+  select option:focus-visible,
+  select option:focus-within, 
+  select option:checked::after {
+    background-color: #3f5a68 !important;
+    color: white !important;
+  }
+
+ select[multiple]:focus option:checked {
+    background: #3f5a68 linear-gradient(0deg, #3f5a68 0%, #3f5a68 100%);
+    color: white !important;
+  } 
