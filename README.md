@@ -22,7 +22,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#admin-view-website-features">Website Features</a></li>
+        <li><a href="#website-features">Website Features</a></li>
       </ul>
       <ul>
         <li><a href="#built-with">Built With</a></li>
