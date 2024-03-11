@@ -41,7 +41,7 @@
 
 ## About The Project
 
-I created a blog website using Angular, TypeScript, JWT, Webpack, HTML, and CSS. The blog website has a view for individuals who are not logged in and one for the admin user who runs the site. I used a JWT Token to authenticate the user and also role validation in case a non-admin logged in. This frontend Angular site connects with the BlogSiteAPI that can be viewed in my repositories also. The BlogSiteAPI utilizes ASP.NET Core Web API, Entity Framework Core, and C#. Please allow time for the site to spin up when visiting. Thank you!
+I created a blog website using Angular, JavaScript, TypeScript, JWT, Webpack, HTML, and CSS. The blog website has a view for individuals who are not logged in and one for the admin user who runs the site. I used a JWT Token to authenticate the user and also role validation in case a non-admin logged in. This frontend Angular site connects with the BlogSiteAPI that can be viewed in my repositories also. The BlogSiteAPI utilizes ASP.NET Core Web API, Entity Framework Core, and C#. Please allow time for the site to spin up when visiting. Thank you!
 
 If you notice any bugs or have an idea to make this website even better please use the links above to make your suggestions! Thank you in advance for viewing my website. 
 
