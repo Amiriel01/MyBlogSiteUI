@@ -41,7 +41,7 @@
 
 ## About The Project
 
-I created a blog website using Angular, TypeScript, HTML, and CSS. The blog website has a view for individuals who are not logged in and one for the admin user who runs the site. I used a JWT Token to authenticate the user and also role validation in case a non-admin logged in. This frontend Angular site connects with the BlogSiteAPI that can be viewed in my repositories also. The BlogSiteAPI utilizes ASP.NET Core Web API, Entity Framework Core, and C#. Please allow time for the site to spin up when visiting. Thank you!
+I created a blog website using Angular, TypeScript, JWT, Webpack, HTML, and CSS. The blog website has a view for individuals who are not logged in and one for the admin user who runs the site. I used a JWT Token to authenticate the user and also role validation in case a non-admin logged in. This frontend Angular site connects with the BlogSiteAPI that can be viewed in my repositories also. The BlogSiteAPI utilizes ASP.NET Core Web API, Entity Framework Core, and C#. Please allow time for the site to spin up when visiting. Thank you!
 
 If you notice any bugs or have an idea to make this website even better please use the links above to make your suggestions! Thank you in advance for viewing my website. 
 
@@ -124,9 +124,11 @@ The "Select Image" button takes the admin to a modal that lets the admin upload 
 * [![Angular][Angular.io]][Angular-url]
 * [![JavaScript][JavaScript.io]][JavaScript-url]
 * [![TypeScript][TypeScript.com]][TypeScript-url]
+* [![JWT][JWT.io]][JWT-url]
 * [![HTML5][HTML5.io]][HTML5-url]
 * [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 * [![CSS3][CSS3.io]][CSS3-url]
+* [![Webpack][Webpack.io]][Webpack-url]
 * [![NPM][NPM.io]][NPM-url]
 * [![VSCode][VSCode.com]][VSCode-url]
 
@@ -187,6 +189,10 @@ Don't forget to give the project a star! Thanks again!
 [NPM-url]: https://www.npmjs.com/
 [VSCode.com]: https://img.shields.io/badge/Visual%20Studio-5C2D91.svg?style=for-the-badge&logo=visual-studio&logoColor=white
 [VSCode-url]: https://code.visualstudio.com/
+[JWT.io]: https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=JSON%20web%20tokens
+[JWT-url]: https://jwt.io/introduction
+[Webpack.io]: https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black
+[Webpack-url]: https://webpack.js.org/
 
 
 
