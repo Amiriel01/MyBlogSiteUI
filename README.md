@@ -79,8 +79,6 @@ From the homepage users can click the "Read More" button on any article to be ro
 
 ![Blog Post Image](READMEImages/blog3.PNG)
 
-![Blog Post Image](READMEImages/blog4.PNG)
-
 If a viewer is also an admin they can login using the "Login" button in the header. They will be routed to the login form page. The admin will enter their username and password to be allowed to access the admin features. If the user enters the wrong username and password combination an alert will be shown.
 
 ![Login Page Image](READMEImages/login.PNG)
