@@ -1,0 +1,17 @@
+.container-width {
+    width: 80% !important;
+}
+
+.bold-text {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0px;
+}
+
+.text-align {
+    text-align: end;
+}
+
+#published-date {
+    color: rgb(109, 109, 109);
+}

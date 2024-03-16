@@ -33,7 +33,7 @@
                 <tr *ngFor="let blogPost of blogPosts">
                     <td>{{blogPost.title}}</td>
                     <td>{{blogPost.shortDescription}}</td>
-                    <td>{{blogPost.isVisible}}</td>
+                    <td>{{blogPost.isVisible ? 'Yes' : 'No'}}</td>
                     <td>
                         <span *ngFor="let category of blogPost.categories" class="me-2">
                             <span class="badge bg-secondary">{{category.name}}</span>
