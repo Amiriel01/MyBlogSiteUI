@@ -8,8 +8,8 @@
   <p align="center">
     Angular & TypeScript Frontend to be used with BlogSiteAPI
     <br />
-    <a href="https://blogsite-8fced.web.app/" target="_blank">View Demo</a>
-    ·
+<!--     <a href="https://blogsite-8fced.web.app/" target="_blank">View Demo</a>
+    · -->
     <a href="https://github.com/Amiriel01/BlogSiteUI/issues" target="_blank">Report Bug</a>
     ·
     <a href="https://github.com/Amiriel01/BlogSiteUI/issues" target="_blank">Suggestions</a>
